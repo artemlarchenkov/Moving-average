@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <vector>
-
+#include <chrono>
 
 template <typename T>
 std::vector<T> simpleMovingAverage(const std::vector<T>& data, int windowSize) {
@@ -22,7 +22,25 @@ std::vector<T> simpleMovingAverage(const std::vector<T>& data, int windowSize) {
     return result;
 }
 int main() {
+    // Генерация случайных данных
+    srand(time(0));
+    std::vector<float> data;
+    for (int i = 0; i < 1000000; ++i) {
+        data.push_back(rand() % 100);
+    }
 
+    // Тестирование функции
+    int windowSizes[] = {4, 8, 16, 32, 64, 128};
+    for (int i = 0; i < sizeof(windowSizes) / sizeof(windowSizes[0]); ++i) {
+        int windowSize = windowSizes[i];
+
+        auto start = std::chrono::high_resolution_clock::now();
+        auto result = simpleMovingAverage(data, windowSize);
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double> duration = end - start;
+
+        std::cout << "Window Size: " << windowSize << ", Duration: " << duration.count() << " seconds\n";
+    }
 
     return 0;
 }

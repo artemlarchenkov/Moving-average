@@ -1,3 +1,19 @@
 ﻿  moving_average.cpp
-A:\C++ Projects\moving_average\moving_average\moving_average.cpp(25,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
-  moving_average.vcxproj -> A:\C++ Projects\moving_average\x64\Debug\moving_average.exe
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(26,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(29,31): warning C4244: аргумент: преобразование "int" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(13,30): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(38,23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<float,std::allocator<float>> simpleMovingAverage<float>(const std::vector<float,std::allocator<float>> &,int)"
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(19,30): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
+          with
+          [
+              _Ty=float
+          ]
+  moving_average.vcxproj -> A:\Пользователи\Артем\Documents\Moving-average\x64\Debug\moving_average.exe
