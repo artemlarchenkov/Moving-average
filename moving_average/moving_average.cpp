@@ -38,7 +38,10 @@ int main() {
         auto end = std::chrono::high_resolution_clock::now(); // Конец операции
         std::chrono::duration<double> duration = end - start; // Разница во времени между началом и концом
 
-        std::cout << "Window Size: " << windowSize << ", Duration: " << duration.count() << " seconds\n";
+        // Вычисление отсчетов в секунду 
+        double samplesPerSecond = static_cast<double>(data.size()) / duration.count();
+
+        std::cout << "Window Size: " << windowSize << ", Duration: " << duration.count() << " seconds, Samples per Second: " << samplesPerSecond << "\n";
     }
 
     return 0;
