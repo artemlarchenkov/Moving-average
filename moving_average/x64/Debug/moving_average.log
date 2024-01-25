@@ -1,0 +1,3 @@
+﻿  moving_average.cpp
+A:\C++ Projects\moving_average\moving_average\moving_average.cpp(25,15): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  moving_average.vcxproj -> A:\C++ Projects\moving_average\x64\Debug\moving_average.exe
