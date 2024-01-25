@@ -10,7 +10,7 @@ A:\Пользователи\Артем\Documents\Moving-average\moving_average\m
           [
               _Ty=float
           ]
-A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(38,23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<float,std::allocator<float>> simpleMovingAverage<float>(const std::vector<float,std::allocator<float>> &,int)"
+A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(37,23): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::vector<float,std::allocator<float>> simpleMovingAverage<float>(const std::vector<float,std::allocator<float>> &,int)"
 A:\Пользователи\Артем\Documents\Moving-average\moving_average\moving_average.cpp(19,30): warning C4244: аргумент: преобразование "double" в "_Ty", возможна потеря данных
           with
           [

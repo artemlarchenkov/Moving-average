@@ -31,13 +31,12 @@ int main() {
 
     // Тестирование функции
     int windowSizes[] = {4, 8, 16, 32, 64, 128};
-    for (int i = 0; i < sizeof(windowSizes) / sizeof(windowSizes[0]); ++i) {
-        int windowSize = windowSizes[i];
+    for (int windowSize : windowSizes) {
 
         auto start = std::chrono::high_resolution_clock::now();
-        auto result = simpleMovingAverage(data, windowSize);
-        auto end = std::chrono::high_resolution_clock::now();
-        std::chrono::duration<double> duration = end - start;
+        auto result = simpleMovingAverage(data, windowSize); // Выполнение функции
+        auto end = std::chrono::high_resolution_clock::now(); // Конец операции
+        std::chrono::duration<double> duration = end - start; // Разница во времени между началом и концом
 
         std::cout << "Window Size: " << windowSize << ", Duration: " << duration.count() << " seconds\n";
     }
